@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tea &amp; Timber | Greenhouse Tea House &amp; Woodworking Studio</title>
+<meta name="description" content="Welcome to Tea &amp; Timber, a light-filled wooden greenhouse in Portland. We serve shade-grown organic teas and craft raw, hand-finished timber goods.">
+<link rel="canonical" href="https://tea-and-timber-2e47.sites.tibly.ai/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tea-and-timber-2e47.sites.tibly.ai/">
+<meta property="og:site_name" content="Tea &amp; Timber">
+<meta property="og:title" content="Tea &amp; Timber | Greenhouse Tea House &amp; Woodworking Studio">
+<meta property="og:description" content="Welcome to Tea &amp; Timber, a light-filled wooden greenhouse in Portland. We serve shade-grown organic teas and craft raw, hand-finished timber goods.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-brand-50: #f4f6f4;
+  --color-brand-100: #e6ebe6;
+  --color-brand-200: #ced9cf;
+  --color-brand-300: #a9beaa;
+  --color-brand-400: #7f9b81;
+  --color-brand-500: #4a5d4e;
+  --color-brand-600: #3b4b3e;
+  --color-brand-700: #303d32;
+  --color-brand-800: #263128;
+  --color-brand-900: #202922;
+
+  --color-accent-50: #fdf7f4;
+  --color-accent-100: #fbeee7;
+  --color-accent-200: #f6dacd;
+  --color-accent-300: #eebeaa;
+  --color-accent-400: #e29a7c;
+  --color-accent-500: #c88b66;
+  --color-accent-600: #b97753;
+  --color-accent-700: #9a5f40;
+  --color-accent-800: #7e4f37;
+  --color-accent-900: #68422f;
+
+  --color-surface: #f5efeb;
+  --color-ink: #2c221e;
+
+  --font-display: "Lora", Georgia, serif;
+  --font-body: "Montserrat", system-ui, sans-serif;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 2rem;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 font-body font-medium text-sm tracking-wide rounded-lg transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-primary {
+    @apply btn bg-brand-500 hover:bg-brand-600 text-white focus:ring-brand-500;
+  }
+  .btn-secondary {
+    @apply btn bg-transparent border-2 border-brand-500/30 hover:border-brand-500 text-ink focus:ring-brand-500;
+  }
+  .card {
+    @apply bg-surface/60 backdrop-blur-sm p-8 rounded-lg border border-brand-200/40 hover:border-brand-200 transition-colors duration-300;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="w-full bg-[#fdfbf7]/90 backdrop-blur-md sticky top-0 z-50 border-b border-brand-100 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 py-5 flex items-center justify-between">
+    <a href="/" class="group flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center group-hover:bg-brand-200 transition-colors duration-300">
+        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-11.314l.707.707m11.314 11.314l.707-.707M12 5a7 7 0 100 14 7 7 0 000-14z"></path>
+        </svg>
+      </div>
+      <span class="font-display text-2xl font-semibold tracking-wide text-ink" data-tibly-field="business-name">Tea & Timber</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="/" class="font-body text-xs uppercase tracking-widest text-ink/75 hover:text-brand-600 font-medium transition-colors duration-200">Home</a>
+      <a href="/about" class="font-body text-xs uppercase tracking-widest text-ink/75 hover:text-brand-600 font-medium transition-colors duration-200">Our Story</a>
+      <a href="/menu" class="font-body text-xs uppercase tracking-widest text-ink/75 hover:text-brand-600 font-medium transition-colors duration-200">Menu & Goods</a>
+      <a href="/gatherings" class="font-body text-xs uppercase tracking-widest text-ink/75 hover:text-brand-600 font-medium transition-colors duration-200">Gatherings</a>
+    </nav>
+
+    <!-- Header Action -->
+    <div class="hidden md:block">
+      <a href="/menu" class="btn-primary py-2.5 px-5 text-xs uppercase tracking-wider rounded-lg">Browse Shop</a>
+    </div>
+
+    <!-- Mobile Menu Button (Toggle handled by consumer page if script present, default simple hover drop-down or CSS triggerable) -->
+    <div class="md:hidden group relative">
+      <button class="p-2 text-ink/80 hover:text-brand-600 focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <div class="absolute right-0 top-full mt-2 w-48 bg-surface border border-brand-100 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/" class="block px-4 py-2 font-body text-xs uppercase tracking-wider text-ink hover:bg-brand-50">Home</a>
+        <a href="/about" class="block px-4 py-2 font-body text-xs uppercase tracking-wider text-ink hover:bg-brand-50">Our Story</a>
+        <a href="/menu" class="block px-4 py-2 font-body text-xs uppercase tracking-wider text-ink hover:bg-brand-50">Menu & Goods</a>
+        <a href="/gatherings" class="block px-4 py-2 font-body text-xs uppercase tracking-wider text-ink hover:bg-brand-50">Gatherings</a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:image-hero -->
+<section class="relative bg-brand-900 text-white overflow-hidden py-24 md:py-36 flex items-center" data-block="image-hero">
+  <!-- Background Image Overlay for rich botanical/timber mood -->
+  <div class="absolute inset-0 z-0">
+    <img src="https://images.unsplash.com/photo-1545048702-79362596cdc9?auto=format&fit=crop&w=2000&q=80" alt="Sunlight streaming through glass panels onto wooden tables and hanging green plants inside a rustic greenhouse" class="w-full h-full object-cover opacity-35 object-center">
+    <div class="absolute inset-0 bg-gradient-to-t from-brand-900 via-brand-900/80 to-transparent"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-8 space-y-8">
+      <span class="inline-block font-body text-xs uppercase tracking-widest text-accent-300 font-semibold bg-accent-900/40 px-3 py-1 rounded-full border border-accent-500/25">Portland, Oregon</span>
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight leading-none text-brand-50">
+        A wooden greenhouse <span class="text-accent-300 block italic font-normal mt-1">for slow days.</span>
+      </h1>
+      <p class="font-body text-lg md:text-xl text-brand-100/90 max-w-2xl leading-relaxed">
+        Step off the trail and into a sun-dappled sanctuary. We steep rare, single-origin botanical teas under a canopy of glass and craft solid, hand-finished timber housewares in our adjoining workshop.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 pt-4">
+        <a href="/menu" class="btn bg-accent-500 hover:bg-accent-600 text-white font-medium px-8 py-4 rounded-lg transition-all duration-300 shadow-md">
+          Explore the Menu &amp; Goods
+        </a>
+        <a href="/gatherings" class="btn border-2 border-brand-200/40 hover:border-brand-100 hover:bg-white/5 text-brand-100 font-medium px-8 py-4 rounded-lg transition-all duration-300">
+          Plan a Visit
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:image-hero -->
+<!-- block:warm-intro -->
+<section class="relative bg-[#FDFBF7] py-24 md:py-32 overflow-hidden" data-block="warm-intro">
+  <!-- The primary design move: Oversized hand-drawn botanical frame decoration (simulated with elegant CSS framing & layered borders) -->
+  <div class="max-w-7xl mx-auto px-6 md:px-12 relative">
+    <div class="relative bg-surface p-8 md:p-16 lg:p-20 rounded-xl border border-brand-200/60 max-w-5xl mx-auto shadow-sm">
+      
+      <!-- Simulated botanical corner frames -->
+      <div class="absolute -top-3 -left-3 w-16 h-16 border-t-2 border-l-2 border-brand-400 rounded-tl-lg pointer-events-none opacity-80"></div>
+      <div class="absolute -top-3 -right-3 w-16 h-16 border-t-2 border-r-2 border-brand-400 rounded-tr-lg pointer-events-none opacity-80"></div>
+      <div class="absolute -bottom-3 -left-3 w-16 h-16 border-b-2 border-l-2 border-brand-400 rounded-bl-lg pointer-events-none opacity-80"></div>
+      <div class="absolute -bottom-3 -right-3 w-16 h-16 border-b-2 border-r-2 border-brand-400 rounded-br-lg pointer-events-none opacity-80"></div>
+
+      <!-- Subtle botanical watermark outline inside container -->
+      <div class="absolute right-6 bottom-6 w-32 h-32 opacity-10 pointer-events-none">
+        <svg class="w-full h-full text-brand-700" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17 8C17 11 15 15 12 18C9 15 7 11 7 8C7 5 9 3 12 3C15 3 17 5 17 8ZM12 5C10.5 5 9 6.5 9 8C9 10.5 11 13.5 12 14.8C13 13.5 15 10.5 15 8C15 6.5 13.5 5 12 5Z"/>
+          <path d="M12 18V21M9 19.5L12 21L15 19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="space-y-6 text-center max-w-3xl mx-auto">
+        <span class="font-body text-xs uppercase tracking-widest text-accent-600 font-bold block">The Tea &amp; Timber Ethos</span>
+        <h2 class="font-display text-3xl md:text-5xl font-medium tracking-tight text-ink leading-tight">
+          Where raw timber meets the warmth of a freshly steeped cup.
+        </h2>
+        <p class="font-body text-base md:text-lg text-ink/80 leading-relaxed">
+          At <span data-tibly-field="business-name">Tea & Timber</span>, we believe in materials that get better with age. Our tables are made from cedar trees harvested from our own forest plots, dried and planed right next to our greenhouse. Every cup of shade-grown green tea we pour is sourced directly from tiny, family-owned estates that protect local mountain ecosystems.
+        </p>
+        <div class="pt-6">
+          <a href="/about" class="inline-flex items-center gap-2 font-body text-sm font-semibold text-brand-600 hover:text-accent-600 transition-colors duration-200">
+            <span>Read our complete story</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:warm-intro -->
+<!-- block:offering-cards -->
+<section class="bg-surface py-24 md:py-32" data-block="offering-cards">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+      <div class="max-w-xl">
+        <span class="font-body text-xs uppercase tracking-widest text-brand-600 font-bold block mb-2">Our Two Worlds</span>
+        <h2 class="font-display text-3xl md:text-5xl font-medium tracking-tight text-ink">
+          Crafted for the senses, built to endure.
+        </h2>
+      </div>
+      <p class="font-body text-sm md:text-base text-ink/70 max-w-sm">
+        We spend our mornings either stoking the fire in our tea room or running the planers in the barn. Here is what we make.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      <!-- Card 1: Tea House -->
+      <div class="group bg-[#FDFBF7] rounded-xl overflow-hidden border border-brand-200/50 hover:border-brand-400 transition-all duration-300 flex flex-col h-full shadow-sm">
+        <div class="aspect-video w-full overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1200&q=80" alt="Steaming tea being poured into a heavy ceramic cup on a natural live-edge wood table" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute top-4 left-4 bg-brand-500 text-white font-body text-xs uppercase tracking-wider px-3 py-1 rounded">
+            The Greenhouse
+          </div>
+        </div>
+        <div class="p-8 md:p-10 flex-grow flex flex-col justify-between">
+          <div class="space-y-4">
+            <h3 class="font-display text-2xl md:text-3xl font-medium text-ink">Heirloom Leaf Teas</h3>
+            <p class="font-body text-sm md:text-base text-ink/75 leading-relaxed">
+              We specialize in forest-grown loose leaf varieties from Japan, Taiwan, and the Pacific Northwest. Our seasonal selections are served in heavy, hand-formed clay vessels designed to warm your hands as you sit among our monstera and fig trees.
+            </p>
+          </div>
+          <div class="pt-8">
+            <a href="/menu" class="btn-secondary w-full text-center text-xs uppercase tracking-widest font-semibold py-3.5">
+              View Tea Menu
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Timber Studio -->
+      <div class="group bg-[#FDFBF7] rounded-xl overflow-hidden border border-brand-200/50 hover:border-brand-400 transition-all duration-300 flex flex-col h-full shadow-sm">
+        <div class="aspect-video w-full overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1200&q=80" alt="Beautifully stacked cedar boards and wooden tea trays drying in a bright wood workshop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute top-4 left-4 bg-accent-600 text-white font-body text-xs uppercase tracking-wider px-3 py-1 rounded">
+            The Workshop
+          </div>
+        </div>
+        <div class="p-8 md:p-10 flex-grow flex flex-col justify-between">
+          <div class="space-y-4">
+            <h3 class="font-display text-2xl md:text-3xl font-medium text-ink">Hand-Finished Timber Goods</h3>
+            <p class="font-body text-sm md:text-base text-ink/75 leading-relaxed">
+              Our small woodshop works with salvaged Northwest cedar, white oak, and walnut. From thick-cut serving boards finished with raw beeswax to custom live-edge tables, each piece is shaped by hand to honor the natural growth rings of the tree.
+            </p>
+          </div>
+          <div class="pt-8">
+            <a href="/menu" class="btn-secondary w-full text-center text-xs uppercase tracking-widest font-semibold py-3.5">
+              Browse Timber Goods
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /block:offering-cards -->
+<!-- block:process-steps -->
+<section class="bg-[#FDFBF7] py-24 md:py-32" data-block="process-steps">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    
+    <div class="max-w-2xl mb-16">
+      <span class="font-body text-xs uppercase tracking-widest text-accent-600 font-bold block mb-2">Our Process</span>
+      <h2 class="font-display text-3xl md:text-5xl font-medium tracking-tight text-ink">
+        How we spend our seasons.
+      </h2>
+      <p class="font-body text-sm md:text-base text-ink/70 mt-4 leading-relaxed">
+        We do not rush. Whether we are curing cedar logs in the mountain breeze or dialing in the water temperature for an experimental batch of oolong, everything happens at its own rhythm.
+      </p>
+    </div>
+
+    <!-- Editorial timeline layout with asymmetrical columns -->
+    <div class="space-y-16 md:space-y-24">
+      
+      <!-- Step 1 -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-1 font-display text-5xl md:text-6xl text-accent-300 font-light lg:text-right">01</div>
+        <div class="lg:col-span-5 space-y-3">
+          <h3 class="font-display text-2xl font-semibold text-ink">Sourcing with Integrity</h3>
+          <p class="font-body text-sm md:text-base text-ink/75 leading-relaxed">
+            Our teas are sourced on small farms with high biodiversity. Our lumber is harvested locally from managed, sustainable woodlots or salvaged from old barn structures across Oregon.
+          </p>
+        </div>
+        <div class="lg:col-span-6">
+          <div class="aspect-video rounded-xl overflow-hidden bg-surface border border-brand-100">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=80" alt="Hands sorting fresh green tea leaves on a bamboo drying tray" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center lg:flex-row-reverse">
+        <div class="lg:col-span-1 lg:order-1 font-display text-5xl md:text-6xl text-accent-300 font-light lg:text-right">02</div>
+        <div class="lg:col-span-5 lg:order-2 space-y-3">
+          <h3 class="font-display text-2xl font-semibold text-ink">Seasoning &amp; Planing</h3>
+          <p class="font-body text-sm md:text-base text-ink/75 leading-relaxed">
+            Timber must cure. We store our cut lumber for up to eighteen months inside our dry timber barn. It is then hand-planed and oiled with cold-pressed botanical seeds to highlight the raw, fragrant grain.
+          </p>
+        </div>
+        <div class="lg:col-span-6 lg:order-3">
+          <div class="aspect-video rounded-xl overflow-hidden bg-surface border border-brand-100">
+            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1000&q=80" alt="Wood shavings falling from a traditional metal hand plane being pulled over a fresh piece of oak" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-1 font-display text-5xl md:text-6xl text-accent-300 font-light lg:text-right">03</div>
+        <div class="lg:col-span-5 space-y-3">
+          <h3 class="font-display text-2xl font-semibold text-ink">Steeping to Perfection</h3>
+          <p class="font-body text-sm md:text-base text-ink/75 leading-relaxed">
+            Water temperature is tuned down to the single degree to prevent burning delicate white and green teas. We brew in small clay pots to let the tea expand, creating a deep, resonant brew.
+          </p>
+        </div>
+        <div class="lg:col-span-6">
+          <div class="aspect-video rounded-xl overflow-hidden bg-surface border border-brand-100">
+            <img src="https://images.unsplash.com/photo-1594631252845-29fc458994b8?auto=format&fit=crop&w=1000&q=80" alt="Boiling water from a rustic copper kettle slowly soaking fresh loose oolong tea leaves in a ceramic bowl" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- /block:process-steps -->
+<!-- block:testimonial -->
+<section class="bg-brand-50 py-20 md:py-28 border-y border-brand-100" data-block="testimonial">
+  <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+    <div class="flex justify-center">
+      <div class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-600">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+        </svg>
+      </div>
+    </div>
+    
+    <p class="font-display text-xl md:text-3xl text-ink leading-relaxed italic">
+      "Spending an hour in the greenhouse at Tea &amp; Timber is like hitting a soft reset button on life. The scent of fresh-cut cedar, the humidity from the warm plants, and the rich oolong make it my favorite spot in Portland."
+    </p>
+
+    <div class="space-y-1">
+      <p class="font-body text-sm font-semibold text-ink">Sylvie Chen</p>
+      <p class="font-body text-xs text-brand-600/80">Sellwood Neighborhood Resident</p>
+    </div>
+  </div>
+</section>
+<!-- /block:testimonial -->
+<!-- block:visit-cta -->
+<section class="bg-[#FDFBF7] py-24 md:py-32" data-block="visit-cta">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="bg-surface rounded-2xl overflow-hidden border border-brand-200/50 p-8 md:p-16 lg:p-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Form Content -->
+      <div class="lg:col-span-6 space-y-6">
+        <span class="font-body text-xs uppercase tracking-widest text-accent-600 font-bold block">Visit Us &amp; Join the Circle</span>
+        <h2 class="font-display text-3xl md:text-5xl font-medium tracking-tight text-ink leading-tight">
+          Join us for a slow afternoon.
+        </h2>
+        <p class="font-body text-sm md:text-base text-ink/75 leading-relaxed">
+          We keep physical menus sparse and simple. Stop by to see our rotating guest teas, pick up a fresh-planed walnut board, or find a cozy bench near our lemon trees. Have a question about custom timber dimensions or upcoming tea tastings? Drop us a line.
+        </p>
+
+        <!-- Dynamic Tibly Booking Widget Embed placeholder -->
+        <div class="mt-8 border-t border-brand-200/40 pt-8">
+          <p class="font-body text-xs uppercase tracking-wider text-brand-700 font-semibold mb-4">Book a Private Tea Session</p>
+          <div data-tibly-booking class="bg-white/80 p-6 rounded-lg border border-brand-100">
+            Online booking is loading — call us if it doesn't appear.
+          </div>
+        </div>
+      </div>
+
+      <!-- General Contact Form -->
+      <div class="lg:col-span-6 bg-white p-8 md:p-10 rounded-xl border border-brand-100 shadow-sm">
+        <h3 class="font-display text-xl font-medium text-ink mb-6">Send us a Message</h3>
+        <form method="POST" action="https://api.tibly.ai/api/public/site-forms" class="space-y-4">
+          <input type="hidden" name="_page" value="/">
+          <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div>
+            <label class="block font-body text-xs uppercase tracking-wider text-ink/70 mb-1 font-medium" for="name">Your Name</label>
+            <input type="text" id="name" name="name" required class="w-full bg-[#FDFBF7] border border-brand-200 rounded px-4 py-2.5 font-body text-sm focus:outline-none focus:border-brand-500 text-ink">
+          </div>
+
+          <div>
+            <label class="block font-body text-xs uppercase tracking-wider text-ink/70 mb-1 font-medium" for="email">Email Address</label>
+            <input type="email" id="email" name="email" required class="w-full bg-[#FDFBF7] border border-brand-200 rounded px-4 py-2.5 font-body text-sm focus:outline-none focus:border-brand-500 text-ink">
+          </div>
+
+          <div>
+            <label class="block font-body text-xs uppercase tracking-wider text-ink/70 mb-1 font-medium" for="message">What are you looking for?</label>
+            <textarea id="message" name="message" rows="4" required class="w-full bg-[#FDFBF7] border border-brand-200 rounded px-4 py-2.5 font-body text-sm focus:outline-none focus:border-brand-500 text-ink" placeholder="Inquire about timber custom cuts, events, or reservations..."></textarea>
+          </div>
+
+          <button type="submit" class="w-full btn-primary py-3 px-6 text-sm uppercase tracking-wider rounded font-medium mt-2">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /block:visit-cta -->
+<!-- block:footer -->
+<footer class="w-full bg-surface border-t border-brand-200/50 pt-16 pb-12">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+    
+    <!-- Brand Info -->
+    <div class="md:col-span-1 space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="font-display text-2xl font-bold tracking-wide text-ink" data-tibly-field="business-name">Tea & Timber</span>
+      </div>
+      <p class="font-body text-sm text-ink/75 leading-relaxed">
+        A neighborhood garden greenhouse serving shade-grown heirloom teas and housing a curated studio of hand-finished timber items.
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="space-y-4">
+      <h4 class="font-body text-xs uppercase tracking-widest font-bold text-brand-600">The Space</h4>
+      <ul class="space-y-2">
+        <li><a href="/" class="font-body text-sm text-ink/85 hover:text-brand-600 transition-colors duration-200">Home</a></li>
+        <li><a href="/about" class="font-body text-sm text-ink/85 hover:text-brand-600 transition-colors duration-200">Our Story</a></li>
+        <li><a href="/menu" class="font-body text-sm text-ink/85 hover:text-brand-600 transition-colors duration-200">Menu & Goods</a></li>
+        <li><a href="/gatherings" class="font-body text-sm text-ink/85 hover:text-brand-600 transition-colors duration-200">Gatherings</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Hours -->
+    <div class="space-y-4">
+      <h4 class="font-body text-xs uppercase tracking-widest font-bold text-brand-600">Hours & Contact</h4>
+      <div class="space-y-2 font-body text-sm text-ink/85">
+        <p class="leading-relaxed">
+          <span class="block font-medium">Daily Greenhouse Hours</span>
+          <span data-tibly-field="hours">8:00 AM – 6:00 PM</span>
+        </p>
+        <p>
+          <a href="tel:503-555-0144" class="hover:text-brand-600 transition-colors duration-200" data-tibly-field="phone">503-555-0144</a>
+        </p>
+        <p>
+          <a href="mailto:hello@teaandtimber.com" class="hover:text-brand-600 transition-colors duration-200" data-tibly-field="email">hello@teaandtimber.com</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Location -->
+    <div class="space-y-4">
+      <h4 class="font-body text-xs uppercase tracking-widest font-bold text-brand-600">Find Us</h4>
+      <p class="font-body text-sm text-ink/85 leading-relaxed">
+        <span class="block" data-tibly-field="address">1204 Oak Grove Way, Portland, Oregon</span>
+        <span class="block text-xs text-ink/60 mt-1">Directly beside the Sellwood garden path.</span>
+      </p>
+      <div class="pt-2" data-tibly-field="links">
+        <a href="https://instagram.com" class="inline-flex items-center gap-1.5 font-body text-xs font-medium text-accent-600 hover:text-accent-700 transition-colors duration-200">
+          <span>Follow our process on Instagram</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="max-w-7xl mx-auto px-6 md:px-12 pt-8 border-t border-brand-200/30 flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="font-body text-xs text-ink/50">
+      &copy; 2026 <span data-tibly-field="business-name">Tea & Timber</span>. All rights preserved.
+    </p>
+    <p class="font-body text-xs text-ink/50">
+      Crafted with botanical care & seasoned oak.
+    </p>
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
